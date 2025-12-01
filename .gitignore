@@ -1,2 +1,6 @@
+# Jupyter checkpoints
 .ipynb_checkpoints/
 **/.ipynb_checkpoints/
+
+# Данные не тянем в гит
+data/
