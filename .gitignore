@@ -12,9 +12,7 @@ data/
 /data
 
 # DVC
-.dvc/config.local
-.dvc/tmp
-.dvc/cache
+.dvc/*
 
 # IDE
 .vscode/
