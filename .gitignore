@@ -1,5 +1,25 @@
-# Jupyter checkpoints
+# Jupyter Notebook
 .ipynb_checkpoints/
 **/.ipynb_checkpoints/
+
+# Environment variables
+.env
+*.env
+.env.local
+
+# Data
 data/
-.ipynb_checkpoints/
+/data
+
+# DVC
+.dvc/cache
+.dvc/tmp
+.dvc/plots
+.dvc/config.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
