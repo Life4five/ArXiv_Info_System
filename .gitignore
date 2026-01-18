@@ -9,7 +9,6 @@
 
 # Data
 data/
-/data
 
 # DVC
 .dvc/cache
@@ -23,3 +22,4 @@ data/
 *.swp
 *.swo
 *~
+/data
