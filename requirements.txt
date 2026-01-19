@@ -1,12 +1,24 @@
-# Core dependencies
-pandas>=2.0.0
-arxiv>=2.0.0
-tqdm>=4.65.0
+# Data Collection & Networking
+arxiv
+httpx
+certifi
 
-# Data storage
-boto3>=1.26.0
-python-dotenv>=1.0.0
-dvc[s3]>=3.0.0
+# Data Processing & Parsing
+pandas
+numpy
+beautifulsoup4
+markdownify
+lxml
+
+# NLP & RAG Pipeline
+torch
+transformers
+sentence-transformers
+langchain-text-splitters
+faiss-cpu
+
+# Model Deployment & Optimization
+accelerate
 
 # Utilities
-certifi>=2023.0.0
+tqdm
