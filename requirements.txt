@@ -1,7 +1,7 @@
 # Data Collection & Networking
 arxiv
 httpx
-dvc-s3
+dvc[s3]
 
 # Data Processing & Parsing
 pandas
