@@ -8,5 +8,16 @@ services:
       - "6333:6333"
       - "6334:6334"
     volumes:
-      - ./qdrant_storage:/qdrant/storage 
+      - ./qdrant_storage:/qdrant/storage
     restart: unless-stopped
+    
+    environment:
+      # Включаем режим работы с S3
+      - QDRANT__STORAGE__SNAPSHOTS_CONFIG__SNAPSHOTS_STORAGE=s3
+      
+      # Подставляем значения из .env файла
+      - QDRANT__STORAGE__SNAPSHOTS_CONFIG__S3_CONFIG__BUCKET=${S3_BUCKET_NAME}
+      - QDRANT__STORAGE__SNAPSHOTS_CONFIG__S3_CONFIG__REGION=${S3_REGION}
+      - QDRANT__STORAGE__SNAPSHOTS_CONFIG__S3_CONFIG__ENDPOINT_URL=${S3_ENDPOINT}
+      - QDRANT__STORAGE__SNAPSHOTS_CONFIG__S3_CONFIG__ACCESS_KEY=${AWS_ACCESS_KEY_ID}
+      - QDRANT__STORAGE__SNAPSHOTS_CONFIG__S3_CONFIG__SECRET_KEY=${AWS_SECRET_ACCESS_KEY}
