@@ -8,7 +8,9 @@
 .env.local
 
 # Data
-data/
+data/metadata/
+data/raw/
+data/processed/
 qdrant_storage/
 
 # DVC
