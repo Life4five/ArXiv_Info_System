@@ -8,9 +8,8 @@
 .env.local
 
 # Data
-data/metadata/
-data/raw/
-data/processed/
+/data
+/qdrant_snapshots
 qdrant_storage/
 
 # DVC
@@ -25,4 +24,4 @@ qdrant_storage/
 *.swp
 *.swo
 *~
-/data
+
