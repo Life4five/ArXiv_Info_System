@@ -115,3 +115,11 @@ streamlit run ./src/frontend.py
 ```
 
 RAG запущен и ждёт вас по адресу `http://localhost:8501/`
+
+### Остановка RAG
+Для остановки RAG просто закройте две консоли и удалите Docker контейнер
+```bash
+docker compose down -v
+````
+
+Для повторного запуска повторите Шаг 5
