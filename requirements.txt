@@ -2,6 +2,7 @@
 arxiv
 httpx
 dvc[s3]
+qdrant-client
 
 # Data Processing & Parsing
 pandas
