@@ -1,0 +1,6 @@
+outs:
+- md5: c47073e4424bd1848f7dbb4c5a15556c.dir
+  size: 4108334080
+  nfiles: 1
+  hash: md5
+  path: qdrant_snapshots

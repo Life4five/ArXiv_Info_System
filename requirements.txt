@@ -1,7 +1,8 @@
 # Data Collection & Networking
 arxiv
 httpx
-certifi
+dvc[s3]
+qdrant-client
 
 # Data Processing & Parsing
 pandas

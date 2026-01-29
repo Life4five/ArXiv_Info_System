@@ -1,7 +1,0 @@
-['remote "storage"']
-    url = s3://bucket-name
-    endpointurl = yourendpointurl
-    access_key_id = ABCDEF012345ABCDEF012345
-    secret_access_key = ABCDEF012345ABCDEF012345
-[core]
-    remote = storage
