@@ -67,7 +67,7 @@ class ScienceRAG:
             self.tokenizer = AutoTokenizer.from_pretrained(llm_model)
             self.model = AutoModelForCausalLM.from_pretrained(
                 llm_model,
-                torch_dtype=torch.float16 if self.device == "cuda" else torch.float32,
+                dtype=torch.float16 if self.device == "cuda" else torch.float32,
                 attn_implementation="sdpa" if self.device == "cuda" else None,
                 low_cpu_mem_usage=True
             ).to(self.device)

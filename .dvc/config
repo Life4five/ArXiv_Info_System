@@ -1,5 +1,0 @@
-[core]
-    remote = origin
-['remote "origin"']
-    url = s3://arxiv-rag-dataset/qdrant_snapshots
-    endpointurl = https://storage.yandexcloud.net
