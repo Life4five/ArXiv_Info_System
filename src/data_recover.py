@@ -1,9 +1,12 @@
 import requests
+from pathlib import Path
 
 # === КОНФИГ ===
 BASE_URL = "http://localhost:6333"
 COLLECTION_NAME = "nlp2025_chunks"
-SNAPSHOT_PATH = r"../qdrant.snapshot"
+
+CURRENT_DIR = Path(__file__).resolve().parent
+SNAPSHOT_PATH = CURRENT_DIR.parent / "qdrant.snapshot"
 
 print(f'Загрузка и восстановление из: {SNAPSHOT_PATH}...')
 
@@ -15,6 +18,6 @@ with open(SNAPSHOT_PATH, "rb") as f:
     )
 
 if response.status_code == 200:
-    print(f'Коллекция '{COLLECTION_NAME}' восстановлена.')
+    print(f'Коллекция "{COLLECTION_NAME}" восстановлена.')
 else:
     print(f'Ошибка {response.status_code}: {response.text}')

@@ -100,16 +100,18 @@ dvc pull
 ```bash
 docker compose up -d
 
-python recover_data.py
+python ./src/data_recover.py
 ```
 
 ### Шаг 5: Запуск RAG системы (не закрывайте консоли во время работы RAG)
 
 Первая консоль:
 ```bash
-python main.py
+python ./src/main.py
 ```
 Вторая консоль:
 ```bash
-streamlit run frontend.py
+streamlit run ./src/frontend.py
 ```
+
+RAG запущен и ждёт вас по адресу `http://localhost:8501/`
